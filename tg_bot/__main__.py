@@ -145,9 +145,9 @@ def send_start(bot, update):
     text += "\nMy name is **Shinobu** \nAnd I'm the cutest Group Management bot ever! 😉 " 
     text += "\n\n Feel Free to add me in your groups and see how I manage them efficiently! 😉..."  
 
-    keyboard = [[InlineKeyboardButton(text="🔰Help", callback_data="help_back"),InlineKeyboardButton(text="⚔️ Connect Group ⚔️", callback_data="main_connect")]]
-    keyboard += [[InlineKeyboardButton(text="💠Add Me💠",url="http://t.me/ShinobuSlayerBot?startgroup=true"),InlineKeyboardButton(text="♻️Owner",url="https://t.me/TokyoGhoul2077")]]
-    keyboard += [[InlineKeyboardButton(text="Check Our Other Bots",url="https://telegra.ph/Our-Other-Projects-11-28")]]
+    keyboard = [[InlineKeyboardButton(text="🔰 Help 🔰", callback_data="help_back"),InlineKeyboardButton(text="⚔️ Connect Group ⚔️", callback_data="main_connect")]]
+    keyboard += [[InlineKeyboardButton(text="💠 Add Me 💠",url="http://t.me/ShinobuSlayerBot?startgroup=true"),InlineKeyboardButton(text="♻️ Owner",url="https://t.me/TokyoGhoul2077")]]
+    keyboard += [[InlineKeyboardButton(text="🤖 Check Our Other Bots 🤖",url="https://telegra.ph/Our-Other-Projects-11-28")]]
 
     update.effective_message.reply_photo(HELP_PANEL_STRING.ALLUKA_IMG,text.format(escape_markdown(first_name), escape_markdown(bot.first_name)), reply_markup=InlineKeyboardMarkup(keyboard), parse_mode=ParseMode.MARKDOWN)
 
