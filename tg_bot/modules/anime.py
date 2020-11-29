@@ -353,7 +353,7 @@ def manga(bot: Bot, update: Update):
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
 
-__help__ disable_web_page_preview=True = """
+__help__ = """
 *Anime*
 Get information about anime, manga or characters with the help of this module! All data is fetched from [AniList](anilist.co).
 *Available commands:*
