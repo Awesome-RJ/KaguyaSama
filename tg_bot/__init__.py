@@ -64,6 +64,7 @@ if ENV:
     CERT_PATH = os.environ.get("CERT_PATH")
 
     DB_URI = os.environ.get('DATABASE_URL')
+    WALL_API = os.environ.get('WALL_API')
     DONATION_LINK = os.environ.get('DONATION_LINK')
     LOAD = os.environ.get("LOAD", "").split()
     NO_LOAD = os.environ.get("NO_LOAD", "translation").split()
@@ -125,6 +126,7 @@ else:
     CERT_PATH = Config.CERT_PATH
 
     DB_URI = Config.SQLALCHEMY_DATABASE_URI
+    WALL_API =  Config.WALL_API
     DONATION_LINK = Config.DONATION_LINK
     LOAD = Config.LOAD
     NO_LOAD = Config.NO_LOAD
