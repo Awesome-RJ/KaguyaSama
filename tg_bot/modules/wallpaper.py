@@ -41,6 +41,12 @@ def wall(bot: Bot, update: Update, args):
                 bot.send_document(chat_id, document=wallpaper,
                 filename='wallpaper', caption=caption, reply_to_message_id=msg_id,
                 timeout=60)
+                __help__ = """
+- This module helps you get HD 4K Wallpapers, from AlphaCoders
+- /wall ```<query>```
+"""
+
+__mod_name__ = "Wallpapers"
                     
             
             
