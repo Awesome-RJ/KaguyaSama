@@ -354,14 +354,14 @@ def manga(bot: Bot, update: Update):
             )
 
 __help__ = """
-*AniList*
+*Anime*
 Get information about anime, manga or characters with the help of this module! All data is fetched from [AniList](anilist.co).
 *Available commands:*
  - /anime <anime>: returns information about the anime.
  - /character <character>: returns information about the character.
  - /manga <manga>: returns information about the manga.
 """
-__mod_name__ = "AniList"
+__mod_name__ = "Anime"
 
 
 AIRING_HANDLER = CommandHandler("airing", airing)
