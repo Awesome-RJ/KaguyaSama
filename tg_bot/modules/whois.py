@@ -44,7 +44,7 @@ def info(bot: Bot, update: Update, args: List[str]):
     else:
         return
     
-    text = (f"<b>User Information extracted from C.A.M.I.L.L.A's database:</b>\n"
+    text = (f"<b>User Information extracted from Shinobu's database:</b>\n"
             f"🆔: <code>{user.id}</code>\n"
             f"👤Name: {html.escape(user.first_name)}")
 
@@ -101,7 +101,7 @@ def info(bot: Bot, update: Update, args: List[str]):
     result = cas.banchecker(user.id)
     text += str(result)
     for mod in USER_INFO:
-        if mod.__mod_name__ == "Users":
+        if mod.__mod_name__ == "User Info":
             continue
 
         try:
