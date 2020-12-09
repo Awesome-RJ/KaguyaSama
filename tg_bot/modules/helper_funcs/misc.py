@@ -113,6 +113,10 @@ def revert_buttons(buttons):
 
     return res
 
+def sendMessage(text: str, bot: Bot, update: Update):
+    return bot.send_message(update.message.chat_id,
+                                    reply_to_message_id=update.message.message_id,
+                                    text=text, parse_mode=ParseMode.HTML)
 
 def build_keyboard_parser(bot, chat_id, buttons):
     keyb = []
