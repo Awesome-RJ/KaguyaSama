@@ -25,10 +25,20 @@ def ddlc(bot: Bot, update: Update):
     msg.reply_photo(message)
  
  
-__help__ = """[Documentation](https://telegra.ph/DDLC-Documentation-05-18)"""
-__mod_name__ = "DDLC"
+__help__ = """Characters - monika, yuri, natsuki, sayori or m, y, n , s
+
+Background - bedroom, class, closet, club, corridor, house, kitchen, residential, sayori_bedroom
+
+Body - there is only 1 or 2 for monika and 1, 1b, 2, 2b for the rest
+
+Face - Every Alphabet Letter, For Yuri - y1, y2, y3, y4, y5, y6, y7
+
+Text - BOTTOM TEXT
+
+Usage: /ddlc <character> <background> <body> <face> <text>"""
+__mod_name__ = "Neko"
  
-DDLC_HANDLER = DisableAbleCommandHandler("ddlc", ddlc)
+DDLC_HANDLER = DisableAbleCommandHandler("Neko", Neko)
  
 dispatcher.add_handler(DDLC_HANDLER)
  
