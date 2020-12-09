@@ -36,9 +36,9 @@ Face - Every Alphabet Letter, For Yuri - y1, y2, y3, y4, y5, y6, y7
 Text - BOTTOM TEXT
 
 Usage: /ddlc <character> <background> <body> <face> <text>"""
-__mod_name__ = "Neko"
+__mod_name__ = "DDLC"
  
-DDLC_HANDLER = DisableAbleCommandHandler("Neko", Neko)
+DDLC_HANDLER = DisableAbleCommandHandler("ddlc", ddlc)
  
 dispatcher.add_handler(DDLC_HANDLER)
  
