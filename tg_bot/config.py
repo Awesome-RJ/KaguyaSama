@@ -41,7 +41,7 @@ class Config(object):
     ALLOW_EXCL = True  # Allow ! commands as well as /
     CASH_API_KEY = None # Get one from https://www.alphavantage.co/support/#api-key
     TIME_API_KEY = None # Get one from https://timezonedb.com/register
-    API_OPENWEATHER = False #Get API_OPENWEATHER FROM OFFICAL SITE https://da.gd/VAW3
+    API_OPENWEATHER = '8823f5b3fa1fbc06a4cbf41d73cc6311' #Get API_OPENWEATHER FROM OFFICAL SITE https://da.gd/VAW3
     AI_API_KEY = None # Coffeehouse chatbot api key, get one from https://coffeehouse.intellivoid.info/
     WALL_API = None # Get one from https://wall.alphacoders.com/api.php
     TIGER_USERS = get_user_list('elevated_users.json', 'tigers')
