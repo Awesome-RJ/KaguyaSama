@@ -22,7 +22,7 @@ coffeehouse
 tswift
 gTTS
 wikipedia
-pyowm
+pyowm==2.10.0
 tabulate
 parsel
 nekos.py
