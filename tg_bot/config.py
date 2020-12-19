@@ -46,7 +46,6 @@ class Config(object):
     WALL_API = None # Get one from https://wall.alphacoders.com/api.php
     TIGER_USERS = get_user_list('elevated_users.json', 'tigers')
     DONATION_LINK = None
-    SPAMMERS = get_user_list('elevated_users.json', 'spammers')
 
 
 class Production(Config):
