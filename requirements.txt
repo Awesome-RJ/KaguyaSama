@@ -26,7 +26,6 @@ pyowm==2.10.0
 tabulate
 parsel
 nekos.py
-time
 requests
 json
 pytz
