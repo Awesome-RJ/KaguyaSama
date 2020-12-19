@@ -15,7 +15,7 @@ class Config(object):
     OWNER_USERNAME = "UdaySriHarshaD"
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = 'postgres://fateunion:fateunion2@database-1.c5fnisvncgjx.us-east-2.rds.amazonaws.com:5432/dbname'  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = 'postgres://fateunion:fateunion2@database-1.c5fnisvncgjx.us-east-2.rds.amazonaws.com:5430/dbname'  # needed for any database modules
     MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
     GBAN_LOGS = -1001175530481 #Channel ID here with -
     LOAD = []
