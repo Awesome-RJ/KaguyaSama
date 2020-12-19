@@ -7,7 +7,8 @@ from telegram import Message, Chat, Update, Bot, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import run_async
 
-from tg_bot import dispatcher, updater, API_WEATHER
+from tg_bot import dispatcher, updater
+from tg_bot.config import API_OPENWEATHER
 from tg_bot.modules.disable import DisableAbleCommandHandler
 
 
