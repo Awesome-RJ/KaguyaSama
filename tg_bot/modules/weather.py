@@ -8,7 +8,7 @@ from telegram.error import BadRequest
 from telegram.ext import run_async
 
 from tg_bot import dispatcher, updater
-from tg_bot.config import API_WEATHER as APPID
+from tg_bot import API_WEATHER as APPID
 from tg_bot.modules.disable import DisableAbleCommandHandler
 
 
