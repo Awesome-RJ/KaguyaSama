@@ -27,5 +27,4 @@ tabulate
 parsel
 nekos.py
 requests
-json
 pytz
