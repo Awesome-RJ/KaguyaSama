@@ -4,7 +4,7 @@ from typing import Optional, List
 
 from telegram import Message, Chat, Update, User, ChatPermissions
 
-from tg_bot import TIGERS, WOLVES, dispatcher
+from tg_bot import TIGER_USERS, WOLVES, dispatcher
 from tg_bot.modules.helper_funcs.chat_status import (bot_admin,
                                                            is_user_admin,
                                                            user_admin,
