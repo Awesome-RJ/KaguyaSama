@@ -28,3 +28,5 @@ parsel
 nekos.py
 requests
 pytz
+markdown2
+bleach
