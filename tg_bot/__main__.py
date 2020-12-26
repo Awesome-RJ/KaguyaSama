@@ -142,11 +142,11 @@ def send_start(bot, update):
     chat = update.effective_chat  # type: Optional[Chat]
     first_name = update.effective_user.first_name
     text = "Hey {}, 𝙃𝙤𝙬 𝙖𝙧𝙚 𝙮𝙤𝙪?..."
-    text += "\nMy name is **Shinobu** \nAnd I'm the cutest Group Management bot ever! 😉 " 
+    text += "\nMy name is **Kaguya** \nAnd I'm the cutest Group Management bot ever! 😉 " 
     text += "\n\n Feel Free to add me in your groups and see how I manage them efficiently! 😉..."  
 
     keyboard = [[InlineKeyboardButton(text="🔰 Help 🔰", callback_data="help_back"),InlineKeyboardButton(text="⚔️ Connect Group ⚔️", callback_data="main_connect")]]
-    keyboard += [[InlineKeyboardButton(text="💠 Add Me 💠",url="http://t.me/ShinobuSlayerBot?startgroup=true"),InlineKeyboardButton(text="♻️ Owner",url="https://t.me/TokyoGhoul2077")]]
+    keyboard += [[InlineKeyboardButton(text="💠 Add Me 💠",url="http://t.me/KaguyaRobot?startgroup=true"),InlineKeyboardButton(text="♻️ Owner",url="https://t.me/TechGuyNaveen")]]
     keyboard += [[InlineKeyboardButton(text="🤖 Check Our Other Bots 🤖",url="https://telegra.ph/Our-Other-Projects-11-28")]]
     keyboard += [[InlineKeyboardButton(text=" Source Code ",url="https://github.com/TokyoGhoul2077/ShinobuSlayerBot")]]
 
