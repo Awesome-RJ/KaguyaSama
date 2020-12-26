@@ -35,7 +35,7 @@ from tg_bot.modules.helper_funcs.alternate import send_message
 #
 # Total spended for making this features is 68+ hours
 
-LOGGER.info("Shinobu Modules Loaded, Reloading again for Verification, any bugs contact @InnocentBnda")
+LOGGER.info("Kaguya's Modules Loaded")
 
 
 FBAN_ERRORS = {
