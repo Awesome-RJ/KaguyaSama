@@ -9,7 +9,7 @@
 
 
 
-![Kaguya](https://telegra.ph/file/c5203c7739ee5c040ca34.png)
+![Kaguya](https://telegra.ph/file/25660b130462cb84c7ab7.png)
 
 
 
