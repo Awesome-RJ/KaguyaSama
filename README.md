@@ -1,15 +1,15 @@
-# Shinobu Kochou
+# Sakura
 
 
 ## The Cutest Group Management Bot ever, with Cool & Fun Features
 
 
-[Contact Dev](https://t.me/TokyoGhoul2077)
+[Contact Dev](https://t.me/TechGuyNaveen)
 
 
 
 
-![Shinobu](https://telegra.ph/file/7d8d1d47bb48805e5b65c.png)
+![Sakura](https://telegra.ph/file/b40f89316f38c410dd8cc.jpg)
 
 
 
