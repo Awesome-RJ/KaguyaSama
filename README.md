@@ -1,4 +1,4 @@
-# Sakura
+# Kaguya
 
 
 ## The Cutest Group Management Bot ever, with Cool & Fun Features
@@ -9,7 +9,7 @@
 
 
 
-![Sakura](https://telegra.ph/file/b40f89316f38c410dd8cc.jpg)
+![Kaguya](https://telegra.ph/file/c5203c7739ee5c040ca34.png)
 
 
 
