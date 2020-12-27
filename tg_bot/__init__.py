@@ -43,6 +43,11 @@ if ENV:
         raise Exception("Your support users list does not contain valid integers.")
 
     try:
+        SPAMMERS = set(int(x) for x in os.environ.get("SPAMMERS", "").split())
+    except ValueError:
+        raise Exception("Your spammers users list does not contain valid integers.")
+
+    try:
         WHITELIST_USERS = set(int(x) for x in os.environ.get("WHITELIST_USERS", "").split())
     except ValueError:
         raise Exception("Your whitelisted users list does not contain valid integers.")
@@ -70,11 +75,11 @@ if ENV:
     ALLOW_EXCL = os.environ.get('ALLOW_EXCL', False)
     CASH_API_KEY = os.environ.get('CASH_API_KEY', None)
     TIME_API_KEY = os.environ.get('TIME_API_KEY', None)
-    API_WEATHER  = os.environ.get('API_OPENWEATHER','8823f5b3fa1fbc06a4cbf41d73cc6311')
+    API_WEATHER  = os.environ.get('API_OPENWEATHER',False)
     AI_API_KEY = os.environ.get('AI_API_KEY', None)
     WALL_API = os.environ.get('WALL_API', None)
     STRICT_GMUTE = bool(os.environ.get('STRICT_GMUTE', False))
-    JOIN_LOGGER = int(os.environ.get('JOIN_LOGGER', -1001347146860)
+    JOIN_LOGGER = int(os.environ.get('JOIN_LOGGER', -1001347146860))
 
 
 else:
@@ -101,6 +106,11 @@ else:
         raise Exception("Your support users list does not contain valid integers.")
 
     try:
+        SPAMMERS = set(int(x) for x in Config.SPAMMERS or [])
+    except ValueError:
+        raise Exception("Your spammers users list does not contain valid integers.")
+
+    try:
         WHITELIST_USERS = set(int(x) for x in Config.WHITELIST_USERS or [])
     except ValueError:
         raise Exception("Your whitelisted users list does not contain valid integers.")
@@ -109,11 +119,6 @@ else:
         TIGER_USERS = set(int(x) for x in Config.TIGER_USERS or [])
     except ValueError:
         raise Exception("Your tiger users list does not contain valid integers.")
-
-    try:
-        WOLVES = set(int(x) for x in Config.WOLVES or [])
-    except ValueError:
-        raise Exception("Your wolves users list does not contain valid integers.")
 
     GBAN_LOGS = Config.GBAN_LOGS
     WEBHOOK = Config.WEBHOOK
@@ -133,7 +138,7 @@ else:
     ALLOW_EXCL = Config.ALLOW_EXCL
     CASH_API_KEY = Config.CASH_API_KEY
     TIME_API_KEY = Config.TIME_API_KEY
-    API_WEATHER = Config.API_OPENWEATHER
+    API_OPENWEATHER = Config.API_OPENWEATHER
     AI_API_KEY = Config.AI_API_KEY
     WALL_API = Config.WALL_API
     STRICT_GMUTE = Config.STRICT_GMUTE
@@ -153,6 +158,7 @@ DEV_USERS = list(DEV_USERS)
 WHITELIST_USERS = list(WHITELIST_USERS)
 SUPPORT_USERS = list(SUPPORT_USERS)
 TIGER_USERS = list(TIGER_USERS)
+SPAMMERS = list(SPAMMERS)
 
 # Load at end to ensure all prev variables have been set
 from tg_bot.modules.helper_funcs.handlers import CustomCommandHandler, CustomRegexHandler, CustomMessageHandler
