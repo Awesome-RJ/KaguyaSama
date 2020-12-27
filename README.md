@@ -18,7 +18,7 @@ The bot is based on the original work done by [PaulSonOfLars](https://github.com
 This repo was just revamped to suit an Anime-centric community. All original credits go to Paul and his dedication, Without his efforts, this fork/base-fork would not have been possible!
 
 
-# Click Below Button To Deploy
+## Click Below Button To Deploy
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TechGuyHarsha/KaguyaSama.git)
 
 
