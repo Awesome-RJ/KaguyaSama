@@ -145,7 +145,7 @@ def info(bot: Bot, update: Update, args: List[str]):
         text += "\n😎The Disaster level of this person is 'LEGEND'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n🔥This member is one of 'Hero Association'."
+        text += "\n🔥This member is one of 'Sama Union'."
         disaster_level_present = True
     elif user.id in SUDO_USERS:
         text += "\n🔥The Disaster level of this person is 'Dragon'."
