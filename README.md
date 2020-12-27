@@ -4,7 +4,7 @@
 ## An Anime Themed Group Management Bot ever, with Cool & Fun Features
 
 
-[![Contact Dev](https://img.shields.io/badge/Contact-Dev-blue)](https://t.me/TechGuyUday)
+[![Contact Dev](https://img.shields.io/badge/Contact-Dev-blue?style=for-the-badge&logo=appveyor)](https://t.me/TechGuyUday)
 
 
 [![DeepSource](https://deepsource.io/gh/TechGuyHarsha/KaguyaSama.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/TechGuyHarsha/KaguyaSama/?ref=repository-badge)
