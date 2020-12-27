@@ -1,4 +1,4 @@
-# Kaguya
+# Kaguya Shinomiya
 
 
 ## An Anime Themed Group Management Bot ever, with Cool & Fun Features
