@@ -5,7 +5,8 @@
 
 
 [Contact Dev](https://t.me/TechGuyHarsha)
-
+[![DeepSource](https://deepsource.io/gh/TechGuyHarsha/KaguyaSama.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/TechGuyHarsha/KaguyaSama/?ref=repository-badge)
+[![DeepSource](https://deepsource.io/gh/TechGuyHarsha/KaguyaSama.svg/?label=resolved+issues&show_trend=true)](https://deepsource.io/gh/TechGuyHarsha/KaguyaSama/?ref=repository-badge)
 
 
 
