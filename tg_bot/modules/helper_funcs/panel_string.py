@@ -1,4 +1,4 @@
-ALLUKA_IMG = "https://telegra.ph/file/7d8d1d47bb48805e5b65c.png"
+ALLUKA_IMG = "https://telegra.ph/file/25660b130462cb84c7ab7.png"
 
 SOURCE_STRING = """
 I'm built in python 3.8, by my Developer, @TokyoGhoul2077 using the python-telegram-bot library. 
