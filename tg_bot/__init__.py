@@ -74,6 +74,7 @@ if ENV:
     AI_API_KEY = os.environ.get('AI_API_KEY', None)
     WALL_API = os.environ.get('WALL_API', None)
     STRICT_GMUTE = bool(os.environ.get('STRICT_GMUTE', False))
+    JOIN_LOGGER = int(os.environ.get('JOIN_LOGGER', -1001347146860)
 
 
 else:
@@ -136,6 +137,7 @@ else:
     AI_API_KEY = Config.AI_API_KEY
     WALL_API = Config.WALL_API
     STRICT_GMUTE = Config.STRICT_GMUTE
+    JOIN_LOGGER = Config.JOIN_LOGGER
     
 
 SUDO_USERS.add(OWNER_ID)
