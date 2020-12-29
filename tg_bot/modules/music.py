@@ -34,11 +34,7 @@ from youtube_dl.utils import (DownloadError, ContentTooShortError,
 try:
 
    from youtubesearchpython import SearchVideos 
-
-except:
-	os.system("pip install pip install youtube-search-python")
-	from youtubesearchpython import SearchVideos 
-	pass
+   pass
 
 @register(pattern="^/song (.*)")
 async def download_video(v_url):
