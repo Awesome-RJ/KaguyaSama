@@ -30,3 +30,12 @@ requests
 pytz
 markdown2
 bleach
+pathlib
+datetime
+pytz
+hachoir
+pybase64
+pySmartDL
+validators
+youtube_dl
+youtubesearchpython
