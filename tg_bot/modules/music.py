@@ -12,7 +12,7 @@ import pybase64
 from base64 import b64decode
 from pySmartDL import SmartDL
 from pyrogram.raw.types import DocumentAttributeVideo, DocumentAttributeAudio
-from pyrogram import events
+from pyrogram import Client
 
 from tg_bot.events import register
 from tg_bot.modules.helper_funcs.utils import progress
