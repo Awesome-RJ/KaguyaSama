@@ -130,7 +130,7 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             send_start(bot, update)
     else:
-        update.effective_message.reply_text("You do not have the permission required to use this...😎")
+        update.effective_message.reply_text("Namaskaram Madam/Sir Garu, ikkada kaadu konchum pm lo start cheyyandi!!")
 
 def send_start(bot, update):
     #Try to remove old message
