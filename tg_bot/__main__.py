@@ -130,7 +130,7 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             send_start(bot, update)
     else:
-        update.effective_message.reply_audio(https://api.telegram.org/bot<token>/sendAudio?chat_id=<chat_id>&Audio=https://raw.githubusercontent.com/TechGuyHarsha/source/main/Arey%20entra%20idhi!.mp3)
+        update.effective_message.reply_audio(bot.send_audio(chat_id=chat_id, audio=open('https://raw.githubusercontent.com/TechGuyHarsha/source/main/Arey%20entra%20idhi!.mp3', 'rb'))
 
 def send_start(bot, update):
     #Try to remove old message
