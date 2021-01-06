@@ -39,3 +39,4 @@ pySmartDL
 validators
 youtube_dl
 youtube-search-python
+pyrogram>=1.0.7
