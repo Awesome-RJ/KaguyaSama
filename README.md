@@ -13,7 +13,7 @@
 
 
 
-![Kaguya](https://telegra.ph/file/25660b130462cb84c7ab7.png)
+[![Kaguya](https://telegra.ph/file/69100b501d784a283a827.png)]
 
 
 
