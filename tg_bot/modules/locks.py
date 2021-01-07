@@ -15,7 +15,6 @@ from tg_bot.modules.disable import DisableAbleCommandHandler
 from tg_bot.modules.helper_funcs.chat_status import can_delete, is_user_admin, user_not_admin, user_admin, bot_can_delete, is_bot_admin, connection_status
 from tg_bot.modules.helper_funcs.filters import CustomFilters
 from tg_bot.modules.log_channel import loggable
-from tg_bot.modules.sql import users_sql
 
 LOCK_TYPES = {
     'sticker': Filters.sticker,

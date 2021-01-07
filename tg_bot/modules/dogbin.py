@@ -1,12 +1,9 @@
-import html
-import json
-import random
 
 from typing import Optional, List
 
 import requests
-from telegram import Message, Chat, Update, Bot, MessageEntity, ParseMode
-from telegram.ext import CommandHandler, run_async, Filters
+from telegram import Update, Bot, ParseMode
+from telegram.ext import run_async
 from telegram.utils.helpers import escape_markdown
 
 from tg_bot import dispatcher

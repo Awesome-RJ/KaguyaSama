@@ -1,19 +1,9 @@
-import html
-import json
-import random
-from datetime import datetime
 from typing import Optional, List
-import time
-import requests
-from telegram import Message, Chat, Update, Bot, MessageEntity
+from telegram import Update, Bot
 from telegram import ParseMode
-from telegram.ext import CommandHandler, run_async, Filters
-from telegram.utils.helpers import escape_markdown, mention_html
                                                                    
 from tg_bot import dispatcher
 from tg_bot.modules.disable import DisableAbleCommandHandler
-from tg_bot.modules.helper_funcs.extraction import extract_user
-from tg_bot.modules.helper_funcs.filters import CustomFilters
 
 from geopy.geocoders import Nominatim
 from telegram import Location

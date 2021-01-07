@@ -1,12 +1,9 @@
-from telegram import ParseMode, Update, Bot, Chat
-from telegram.ext import CommandHandler, MessageHandler, BaseFilter, run_async
+from telegram import ParseMode, Update, Bot
+from telegram.ext import CommandHandler, run_async
 
 from tg_bot import dispatcher
-
-import os
 import json
 import requests
-from tabulate import tabulate
 from urllib.request import urlopen
 
 def sign_delta(delta_var):

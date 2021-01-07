@@ -1,5 +1,5 @@
 import requests
-from telegram import Bot, Message, Update, ParseMode
+from telegram import Bot, Update, ParseMode
 from telegram.ext import CommandHandler, run_async
 
 from tg_bot import dispatcher

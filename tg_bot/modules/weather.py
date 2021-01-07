@@ -1,14 +1,11 @@
-import time
 import requests
 import json
 
 from pytz import country_names as cname
-from telegram import Message, Chat, Update, Bot, ParseMode
-from telegram.error import BadRequest
+from telegram import ParseMode
 from telegram.ext import run_async
 
-from tg_bot import dispatcher, updater
-from tg_bot import API_WEATHER as APPID
+from tg_bot import dispatcher
 from tg_bot.modules.disable import DisableAbleCommandHandler
 
 

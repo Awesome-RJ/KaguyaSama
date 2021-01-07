@@ -2,12 +2,11 @@ import os
 import re
 import requests
 import urllib
-from urllib.request import urlopen
 from urllib.error import URLError, HTTPError
 from bs4 import BeautifulSoup
 
 from typing import List
-from telegram import ParseMode, InputMediaPhoto, Update, Bot, TelegramError
+from telegram import InputMediaPhoto, Update, Bot, TelegramError
 from telegram.ext import run_async
 
 from tg_bot import dispatcher

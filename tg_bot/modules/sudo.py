@@ -1,4 +1,3 @@
-import html
 
 from typing import List
 
@@ -6,7 +5,7 @@ from telegram import Update, Bot
 from telegram.ext import CommandHandler, Filters
 from telegram.ext.dispatcher import run_async
 
-from tg_bot import dispatcher, SUDO_USERS, OWNER_USERNAME, OWNER_ID
+from tg_bot import dispatcher, SUDO_USERS, OWNER_ID
 from tg_bot.modules.helper_funcs.extraction import extract_user
 from tg_bot.modules.helper_funcs.chat_status import bot_admin
 

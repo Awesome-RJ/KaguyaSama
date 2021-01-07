@@ -1,11 +1,9 @@
-import html
-from telegram import Message, Update, Bot, User, Chat, ParseMode
+from telegram import Update, Bot, User
 from typing import List, Optional
 from telegram.error import BadRequest, TelegramError
-from telegram.ext import run_async, CommandHandler, MessageHandler, Filters
+from telegram.ext import run_async, CommandHandler, Filters
 from telegram.utils.helpers import mention_html
 from tg_bot import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS
-from tg_bot.modules.helper_funcs.chat_status import user_admin, is_user_admin
 from tg_bot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
 from tg_bot.modules.helper_funcs.filters import CustomFilters
 from tg_bot.modules.helper_funcs.misc import send_to_list

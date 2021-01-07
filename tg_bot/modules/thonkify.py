@@ -3,9 +3,8 @@
 import base64
 from io import BytesIO
 from PIL import Image
-from telegram import Message, Update, Bot, User
-from telegram.ext import Filters, MessageHandler, run_async
-from tg_bot.modules.helper_funcs.extraction import extract_user_and_text
+from telegram import Update, Bot
+from telegram.ext import run_async
 from tg_bot.modules.disable import DisableAbleCommandHandler
 from tg_bot import dispatcher
 
