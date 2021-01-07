@@ -6,7 +6,7 @@
 
 [![Contact Dev](https://img.shields.io/badge/Contact-Dev-blue?style=for-the-badge&logo=telegram)](https://t.me/TechGuyUday)
 
-![Kaguya](https://telegra.ph/file/25660b130462cb84c7ab7.png) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/35c597cc5d2243b7b2994014f6c80c14)](https://www.codacy.com/gh/TechGuyHarsha/KaguyaSama/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TechGuyHarsha/KaguyaSama&amp;utm_campaign=Badge_Grade)
+![Kaguya](https://telegra.ph/file/25660b130462cb84c7ab7.png) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/35c597cc5d2243b7b2994014f6c80c14)](https://www.codacy.com/gh/TechGuyHarsha/KaguyaSama/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TechGuyHarsha/KaguyaSama&amp;utm_campaign=Badge_Grade)]
 
 
 
