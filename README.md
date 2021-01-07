@@ -6,13 +6,6 @@
 
 [![Contact Dev](https://img.shields.io/badge/Contact-Dev-blue?style=for-the-badge&logo=telegram)](https://t.me/TechGuyUday)
 
-
-[![DeepSource](https://deepsource.io/gh/TechGuyHarsha/KaguyaSama.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/TechGuyHarsha/KaguyaSama/?ref=repository-badge)
-
-[![DeepSource](https://deepsource.io/gh/TechGuyHarsha/KaguyaSama.svg/?label=resolved+issues&show_trend=true)](https://deepsource.io/gh/TechGuyHarsha/KaguyaSama/?ref=repository-badge)
-
-
-
 ![Kaguya](https://telegra.ph/file/25660b130462cb84c7ab7.png)
 
 
