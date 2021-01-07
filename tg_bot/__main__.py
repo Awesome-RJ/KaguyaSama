@@ -130,7 +130,7 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             send_start(bot, update)
     else:
-        update.effective_message.reply_text("Are Entra Idhi!?, Nen leche unna robots eppudu padukovu 😂😂, Daaniki prathyekanga start cheyanakkarledu. 😒") )
+        update.effective_message.reply_text("Are Entra Idhi!?, Nen leche unna robots eppudu padukovu 😂😂, Daaniki prathyekanga start cheyanakkarledu. 😒")
 
 def send_start(bot, update):
     #Try to remove old message
