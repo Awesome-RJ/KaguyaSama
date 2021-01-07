@@ -11,8 +11,6 @@ from telegram.utils.helpers import mention_html
 import tg_bot.modules.sql.welcome_sql as sql
 import tg_bot.modules.sql.global_bans_sql as gbansql
 import tg_bot.modules.sql.users_sql as userssql
-
-from tg_bot import dispatcher, OWNER_ID, LOGGER, SUDO_USERS, SUPPORT_USERS
 from tg_bot.modules.helper_funcs.chat_status import user_admin
 from tg_bot.modules.helper_funcs.misc import send_to_list
 from tg_bot.modules.helper_funcs.extraction import extract_user
