@@ -2,23 +2,19 @@ import html
 from typing import Optional, List
 
 import telegram.ext as tg
-from telegram import Message, Chat, Update, Bot, ParseMode, User, MessageEntity
-from telegram import TelegramError
+from telegram import Message, Chat, Update, Bot, ParseMode, User
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html, mention_markdown
 
 import tg_bot.modules.sql.blsticker_sql as sql
-from tg_bot import dispatcher, SUDO_USERS, LOGGER, OWNER_ID
+from tg_bot import dispatcher, LOGGER
 from tg_bot.modules.disable import DisableAbleCommandHandler
-from tg_bot.modules.helper_funcs.chat_status import can_delete, is_user_admin, user_not_admin, user_admin, \
-		bot_can_delete, is_bot_admin
-from tg_bot.modules.helper_funcs.filters import CustomFilters
+from tg_bot.modules.helper_funcs.chat_status import user_not_admin, user_admin
 from tg_bot.modules.helper_funcs.misc import split_message
 from tg_bot.modules.warns import warn
 from tg_bot.modules.log_channel import loggable
-from tg_bot.modules.sql import users_sql
 from tg_bot.modules.connection import connected
 
 from tg_bot.modules.helper_funcs.alternate import send_message

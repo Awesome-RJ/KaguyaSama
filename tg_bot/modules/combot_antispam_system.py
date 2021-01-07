@@ -1,28 +1,23 @@
-import html, time
-import re
+import html
 from typing import Optional, List
 
 import tg_bot.modules.helper_funcs.cas_api as cas
 
-from telegram import Message, Chat, Update, Bot, User, CallbackQuery, ChatMember, ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, MessageEntity
-from telegram.error import BadRequest
-from tg_bot import dispatcher, OWNER_ID, DEV_USERS, SUDO_USERS, SUPPORT_USERS, TIGER_USERS, WHITELIST_USERS, LOGGER
-from telegram.ext import MessageHandler, Filters, CommandHandler, run_async, CallbackQueryHandler
-from telegram.utils.helpers import mention_markdown, mention_html, escape_markdown
+from telegram import Message, Chat, Update, Bot, ParseMode, MessageEntity
+from tg_bot import dispatcher, SUDO_USERS
+from telegram.ext import Filters, CommandHandler, run_async
+from telegram.utils.helpers import mention_html
 
 import tg_bot.modules.sql.welcome_sql as sql
 import tg_bot.modules.sql.global_bans_sql as gbansql
 import tg_bot.modules.sql.users_sql as userssql
 
 from tg_bot import dispatcher, OWNER_ID, LOGGER, SUDO_USERS, SUPPORT_USERS
-from tg_bot.modules.helper_funcs.chat_status import user_admin, can_delete, is_user_ban_protected
-from tg_bot.modules.helper_funcs.misc import build_keyboard, revert_buttons, send_to_list
-from tg_bot.modules.helper_funcs.msg_types import get_welcome_type
+from tg_bot.modules.helper_funcs.chat_status import user_admin
+from tg_bot.modules.helper_funcs.misc import send_to_list
 from tg_bot.modules.helper_funcs.extraction import extract_user
 from tg_bot.modules.disable import DisableAbleCommandHandler
 from tg_bot.modules.helper_funcs.filters import CustomFilters
-from tg_bot.modules.helper_funcs.string_handling import markdown_parser, escape_invalid_curly_brackets
-from tg_bot.modules.log_channel import loggable
 
 
 @run_async

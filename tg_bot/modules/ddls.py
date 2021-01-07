@@ -1,7 +1,6 @@
 import requests
-import os
  
-from telegram import Update, Bot, ParseMode
+from telegram import Update, Bot
 from telegram.ext import run_async
  
 from tg_bot import dispatcher

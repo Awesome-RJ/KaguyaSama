@@ -1,6 +1,6 @@
 import threading
 
-from sqlalchemy import Column, String, UnicodeText, func, distinct, Integer, Boolean
+from sqlalchemy import Column, String, UnicodeText, Integer, Boolean
 
 from tg_bot.modules.sql import SESSION, BASE
 
@@ -148,7 +148,7 @@ def del_fed(fed_id):
 					SESSION.delete(banlist)
 					SESSION.commit()
 		if FEDERATION_BANNED_USERID.get(fed_id):
-                    FEDERATION_BANNED_USERID.pop(fed_id)
+		                  FEDERATION_BANNED_USERID.pop(fed_id)
 		if FEDERATION_BANNED_FULL.get(fed_id):
 			FEDERATION_BANNED_FULL.pop(fed_id)
 		# Delete from database

@@ -1,6 +1,5 @@
 import html
 import re
-import json
 from typing import List
 
 import requests

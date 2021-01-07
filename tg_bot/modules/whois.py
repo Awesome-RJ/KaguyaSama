@@ -1,25 +1,16 @@
 #Modificatins by @am_DQ_fan
 import html
-import json
-import os
-import psutil
-import random
-import time
-import datetime
 from typing import Optional, List
-import re
 import requests
 from telegram.error import BadRequest
-from telegram import Message, Chat, Update, Bot, MessageEntity
+from telegram import Update, Bot, MessageEntity
 from telegram import ParseMode
-from telegram.ext import CommandHandler, run_async, Filters
-from telegram.utils.helpers import escape_markdown, mention_html
-from tg_bot.modules.helper_funcs.chat_status import user_admin, sudo_plus, is_user_admin
+from telegram.ext import run_async
+from telegram.utils.helpers import mention_html
 from tg_bot import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS
-from tg_bot.__main__ import STATS, USER_INFO, TOKEN
-from tg_bot.modules.disable import DisableAbleCommandHandler, DisableAbleRegexHandler
+from tg_bot.__main__ import USER_INFO, TOKEN
+from tg_bot.modules.disable import DisableAbleCommandHandler
 from tg_bot.modules.helper_funcs.extraction import extract_user
-from tg_bot.modules.helper_funcs.filters import CustomFilters
 import tg_bot.modules.sql.users_sql as sql
 import tg_bot.modules.helper_funcs.cas_api as cas
 
