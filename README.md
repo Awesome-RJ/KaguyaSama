@@ -4,7 +4,7 @@
 ## An Anime Themed Group Management Bot ever, with Cool & Fun Features
 
 ### If you have any issue you can contact via these buttons!!!
-[![Contact Dev](https://img.shields.io/badge/Contact-Dev-blue?style=?style=flat&logo=telegram)](https://t.me/TechGuyHarsha) [![Support Group](https://img.shields.io/badge/Support-Group-red?style=flat&logo=telegram)](https://t.me/UdaySriHarsha)
+[![Contact Dev](https://img.shields.io/badge/Contact-Dev-blue?style=?style=flat&logo=telegram)](https://t.me/TechGuyHarsha) [![Support Group](https://img.shields.io/badge/Support-Group-red?style=flat&logo=telegram)](https://t.me/kaguyasupport)
 ![Kaguya](https://telegra.ph/file/25660b130462cb84c7ab7.png) 
 
 
