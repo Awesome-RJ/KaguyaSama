@@ -127,7 +127,7 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             send_start(bot, update)
     else:
-        update.effective_message.reply_text("Are Entra Idhi!?, Nen leche unna robots eppudu padukovu 😂😂, Daaniki prathyekanga start cheyanakkarledu. 😒")
+        update.effective_message.reply_text("IAM ALIVE")
 
 def send_start(bot, update):
     #Try to remove old message
@@ -143,7 +143,7 @@ def send_start(bot, update):
     text += "\n\n Feel Free to add me in your groups and see how I manage them efficiently! 😉..."  
 
     keyboard = [[InlineKeyboardButton(text="🔰 Help 🔰", callback_data="help_back"),InlineKeyboardButton(text="⚔️ Connect Group ⚔️", callback_data="main_connect")]]
-    keyboard += [[InlineKeyboardButton(text="💠 Add Me 💠",url="http://t.me/PrincessKaguyaBot?startgroup=true"),InlineKeyboardButton(text="♻️ Owner",url="https://t.me/TechGuyHarsha")]]
+    keyboard += [[InlineKeyboardButton(text="💠 Add Me 💠",url="http://t.me/Kaguya_Robot?startgroup=true"),InlineKeyboardButton(text="♻️ Owner",url="https://t.me/TechGuyHarsha")]]
     keyboard += [[InlineKeyboardButton(text="🤖 Check Our Other Bots 🤖",url="https://telegra.ph/Our-Other-Projects-11-28")]]
     keyboard += [[InlineKeyboardButton(text="ℹ️ Source Code ℹ️",url="https://github.com/TechGuyHarsha/KaguyaSama")]]
 
