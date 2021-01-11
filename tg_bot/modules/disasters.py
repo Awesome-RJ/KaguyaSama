@@ -538,7 +538,7 @@ def sudolist(bot: Bot, update: Update):
 @whitelist_plus
 def devlist(bot: Bot, update: Update):
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>Sama Union Members 🔥:</b>\n"
+    reply = "<b>Support Members 🔥:</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
@@ -550,7 +550,7 @@ def devlist(bot: Bot, update: Update):
 
 
 __help__ = """
- - /samaunion - Lists all Sama Union members.
+ - /support - Lists all Support members.
  - /dragons - Lists all Dragon disasters.
  - /tigers - Lists all Tigers disasters.
  - /wolves - Lists all Wolf disasters.
@@ -569,7 +569,7 @@ WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "wolves"], whitelistlis
 TIGERLIST_HANDLER = CommandHandler(["tigers"], tigerlist)
 SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "demons"], supportlist)
 SUDOLIST_HANDLER = CommandHandler(["sudolist", "dragons"], sudolist)
-DEVLIST_HANDLER = CommandHandler(["devlist", "samaunion"], devlist)
+DEVLIST_HANDLER = CommandHandler(["devlist", "support"], devlist)
 
 dispatcher.add_handler(SUDO_HANDLER)
 dispatcher.add_handler(SUPPORT_HANDLER)
