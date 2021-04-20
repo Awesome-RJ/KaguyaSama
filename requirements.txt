@@ -20,7 +20,7 @@ jikanpy
 speedtest-cli
 coffeehouse
 tswift
-gTTS
+gtts
 wikipedi
 pyowm==2.10.0
 tabulate
