@@ -21,7 +21,7 @@ speedtest-cli
 coffeehouse
 tswift
 gtts
-wikipedi
+wikipedia
 pyowm==2.10.0
 tabulate
 parsel
