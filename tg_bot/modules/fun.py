@@ -29,16 +29,16 @@ def slap(bot: Bot, update: Update, args: List[str]):
     curr_user = html.escape(message.from_user.first_name)
     user_id = extract_user(message, args)
 
-    if (user_id == 1269655123) or (user_id == 1018289116):
+    if user_id in [1269655123, 1018289116]:
         update.message.reply_text("LoL you noob, I won't slap my master, got that?")
     else:
-   
+
 
         if user_id:
 
             slapped_user = bot.get_chat(user_id)
             user1 = curr_user
-        
+
             user2 = html.escape(slapped_user.first_name)
 
         else:

@@ -49,9 +49,9 @@ def app(_bot: Bot, update: Update):
             'div', 'Vpfmgd').findNext(
             'div', 'uzcko').img['data-src']
         app_details = "<a href='" + app_icon + "'>📲&#8203;</a>"
-        app_details += " <b>" + app_name + "</b>"
+        app_details += f" <b>{app_name}</b>"
         app_details += "\n\n<code>Developer :</code> <a href='" + app_dev_link + "'>"
-        app_details += app_dev + "</a>"
+        app_details += f'{app_dev}</a>'
         app_details += "\n<code>Rating :</code> " + app_rating.replace(
             "Rated ", "⭐️ ").replace(" out of ", "/").replace(
                 " stars", "", 1).replace(" stars", "⭐️").replace("five", "5")
@@ -113,8 +113,7 @@ def reverse(bot: Bot, update: Update, args: List[str]):
     rtmid = msg.message_id
     imagename = "okgoogle.png"
 
-    reply = msg.reply_to_message
-    if reply:
+    if reply := msg.reply_to_message:
         if reply.sticker:
             file_id = reply.sticker.file_id
         elif reply.photo:
@@ -135,7 +134,7 @@ def reverse(bot: Bot, update: Update, args: List[str]):
                 lim = 2
         else:
             lim = 2
-    elif args and not reply:
+    elif args:
         splatargs = msg.text.split(" ")
         if len(splatargs) == 3:
             img_link = splatargs[1]
@@ -152,12 +151,12 @@ def reverse(bot: Bot, update: Update, args: List[str]):
         try:
             urllib.request.urlretrieve(img_link, imagename)
         except HTTPError as HE:
-            if HE.reason == 'Not Found':
-                msg.reply_text("Image not found.")
-                return
-            elif HE.reason == 'Forbidden':
+            if HE.reason == 'Forbidden':
                 msg.reply_text(
                     "Couldn't access the provided link, The website might have blocked accessing to the website by bot or the website does not existed.")
+                return
+            elif HE.reason == 'Not Found':
+                msg.reply_text("Image not found.")
                 return
         except URLError as UE:
             msg.reply_text(f"{UE.reason}")
@@ -198,7 +197,7 @@ def reverse(bot: Bot, update: Update, args: List[str]):
             return
 
         os.remove(imagename)
-        match = ParseSauce(fetchUrl + "&hl=en")
+        match = ParseSauce(f'{fetchUrl}&hl=en')
         guess = match['best_guess']
         if match['override'] and match['override'] != '':
             imgspage = match['override']
@@ -257,7 +256,6 @@ def ParseSauce(googleurl):
             results['override'] = url
     except Exception as e:
         print(e)
-        pass
     for similar_image in soup.findAll('input', {'class': 'gLFyf'}):
         url = 'https://www.google.com/search?tbm=isch&q=' + \
             urllib.parse.quote_plus(similar_image.get('value'))
@@ -304,11 +302,7 @@ def generate_time(to_find: str, findtype: List[str]) -> str:
                 country_zone = zone['zoneName']
                 country_code = zone['countryCode']
 
-                if zone['dst'] == 1:
-                    daylight_saving = "Yes"
-                else:
-                    daylight_saving = "No"
-
+                daylight_saving = "Yes" if zone['dst'] == 1 else "No"
                 date_fmt = r"%d-%m-%Y"
                 time_fmt = r"%H:%M:%S"
                 day_fmt = r"%A"
@@ -409,23 +403,13 @@ def wall(bot: Bot, update: Update, args):
     chat_id = update.effective_chat.id
     msg = update.effective_message
     msg_id = update.effective_message.message_id
-    query = " ".join(args)
-    if not query:
-        msg.reply_text("Please enter a query!")
-        return
-    else:
+    if query := " ".join(args):
         caption = query
         term = query.replace(" ", "%20")
         json_rep = requests.get(
             f"https://wall.alphacoders.com/api2.0/get.php?auth={WALL_API}&method=search&term={term}").json()
-        if not json_rep.get("success"):
-            msg.reply_text("An error occurred! Report this @LyndaEagleSupport")
-        else:
-            wallpapers = json_rep.get("wallpapers")
-            if not wallpapers:
-                msg.reply_text("No results found! Refine your search.")
-                return
-            else:
+        if json_rep.get("success"):
+            if wallpapers := json_rep.get("wallpapers"):
                 index = randint(0, len(wallpapers) - 1)  # Choose random index
                 wallpaper = wallpapers[index]
                 wallpaper = wallpaper.get("url_image")
@@ -439,6 +423,14 @@ def wall(bot: Bot, update: Update, args):
                     caption=caption,
                     reply_to_message_id=msg_id,
                     timeout=60)
+            else:
+                msg.reply_text("No results found! Refine your search.")
+                return
+        else:
+            msg.reply_text("An error occurred! Report this @LyndaEagleSupport")
+    else:
+        msg.reply_text("Please enter a query!")
+        return
 
 
 @run_async

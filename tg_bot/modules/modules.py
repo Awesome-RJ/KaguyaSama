@@ -17,7 +17,7 @@ def load(bot: Bot, update: Update):
     load_messasge = message.reply_text(f"Attempting to load module : <b>{text}</b>", parse_mode=ParseMode.HTML)
 
     try:
-        imported_module = importlib.import_module("tg_bot.modules." + text)
+        imported_module = importlib.import_module(f"tg_bot.modules.{text}")
     except:
         load_messasge.edit_text("Does that module even exist?")
         return
@@ -25,7 +25,7 @@ def load(bot: Bot, update: Update):
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
-    if not imported_module.__mod_name__.lower() in IMPORTED:
+    if imported_module.__mod_name__.lower() not in IMPORTED:
         IMPORTED[imported_module.__mod_name__.lower()] = imported_module
     else:
         load_messasge.edit_text("Module already loaded.")
@@ -79,7 +79,7 @@ def unload(bot: Bot, update: Update):
     unload_messasge = message.reply_text(f"Attempting to unload module : <b>{text}</b>", parse_mode=ParseMode.HTML)
 
     try:
-        imported_module = importlib.import_module("tg_bot.modules." + text)
+        imported_module = importlib.import_module(f"tg_bot.modules.{text}")
     except:
         unload_messasge.edit_text("Does that module even exist?")
         return

@@ -46,7 +46,7 @@ def paste(bot: Bot, update: Update, args: List[str]):
 def get_paste_content(bot: Bot, update: Update, args: List[str]):
     message = update.effective_message
 
-    if len(args) >= 1:
+    if args:
         key = args[0]
     else:
         message.reply_text("Please supply a paste key!")
@@ -73,13 +73,15 @@ def get_paste_content(bot: Bot, update: Update, args: List[str]):
                 update.effective_message.reply_text('Unknown error occured')
         r.raise_for_status()
 
-    update.effective_message.reply_text('```' + escape_markdown(r.text) + '```', parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_text(
+        f'```{escape_markdown(r.text)}```', parse_mode=ParseMode.MARKDOWN
+    )
 
 @run_async
 def get_paste_stats(bot: Bot, update: Update, args: List[str]):
     message = update.effective_message
 
-    if len(args) >= 1:
+    if args:
         key = args[0]
     else:
         message.reply_text("Please supply a paste key!")
